@@ -1,10 +1,24 @@
 # Docker
 This repo holds a collection of useful dockers.
 
-# Data Science
+## Docker Basics
+### Install Docker
+See https://docs.docker.com/.
 
-# Deep Learning
+### Basics
+An __image__ is an executable package with everything to run the service.
 
-# Trading
+An __container__ is a runtime instance of an image.
 
+### Useful Commands
+#### Containers
+List running containers: `docker ps`.
 
+#### Images
+Delete:
+
+## Data Science
+
+## Deep Learning
+
+## Investment
