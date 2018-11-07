@@ -73,3 +73,10 @@ Run:
 
 
 ## Investment
+Build image:
+- `cd` to ./investment/
+- `docker build -t docker-invest .`
+
+Run:
+
+`docker run --rm -p 8888:8888 -v ~/projects:/home/jovyan/work/ docker-invest`
