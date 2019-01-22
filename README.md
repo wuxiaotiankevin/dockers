@@ -65,7 +65,7 @@ https://github.com/ufoym/deepo#Jupyter
 
 Run:
 
-`nvidia-docker run -it -p 8888:8888 -v ~/:/host --ipc=host ufoym/deepo:all-py36-jupyter jupyter notebook --no-browser --ip=0.0.0.0 --allow-root /host --NotebookApp.token= --notebook-dir='/root'`
+`nvidia-docker run -it -p 8888:8888 -v ~/projects:/host --ipc=host deepo-jupyter jupyter notebook --no-browser --ip=0.0.0.0 --allow-root /host --NotebookApp.token= --notebook-dir='/root'`
 
 ### Build my own
 Setup:
