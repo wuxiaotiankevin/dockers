@@ -44,14 +44,19 @@ Run:
 ## Deep Learning
 There are many deep learning ready docker image available on GitHub. The following two are tested and ready to run.
 
-### CPU only with Jupyter
+### CPU Only
 Setup:
 
 https://hub.docker.com/r/waleedka/modern-deep-learning/
 
-Run:
+or use my copy of Dockerfile
 
-`docker run -it -p 8888:8888 -p 6006:6006 -v ~/:/host waleedka/modern-deep-learning jupyter notebook --ip=0.0.0.0 --allow-root /host`
+Run with command line:
+`docker run -it -p 8888:8888 -p 6006:6006 -v ~/:/host modern-deep-learning`
+
+Run with Jupyter:
+
+`docker run -it -p 8888:8888 -p 6006:6006 -v ~/projects:/host modern-deep-learning jupyter notebook --ip=0.0.0.0 --allow-root /host`
 
 ### GPU with Jupyter
 Setup:
